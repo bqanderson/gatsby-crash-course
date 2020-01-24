@@ -1,0 +1,42 @@
+// === Root Settings ======================================================= //
+html, body {
+  height: 100%;
+  font-family: "mononoki", Menlo, Monaco, "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: $base-line-height;
+  letter-spacing: $base-line-height * 0.05;
+  margin: 0 auto;
+  background-color: $black;
+  color: $light-white;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+// === Link Settings ======================================================= //
+a {
+  color: $blue;
+  text-decoration: none;
+  @include transition(200ms all ease-in-out);
+  
+  &:hover {
+    color: $magenta;
+    text-decoration: none;
+  }
+
+  &.link-custom {
+    color: $light-yellow;
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
