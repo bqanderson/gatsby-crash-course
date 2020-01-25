@@ -4,3 +4,5 @@ $mononoki-path: '../../static/fonts/mononoki/';
 // === Components, Modules, and Partials =================================== //
 @import "./modules/all";
 @import "./partials/base";
+@import "./components/header";
+@import "./components/logo";

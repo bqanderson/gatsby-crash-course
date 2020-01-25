@@ -1,3 +1,23 @@
+// === Base Typography ===================================================== //
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: "mononoki", Menlo, Monaco, "Courier New", monospace;
+  font-weight: bold;
+  color: $black;
+}
+
+p {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: $base-line-height;
+}
+
+em { font-style: italic; }
+
 // === MONONOKI Regular ==================================================== //
 .mononoki-regular {
   font-family: "mononoki", Menlo, Monaco, "Courier New", monospace;

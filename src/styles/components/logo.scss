@@ -1,0 +1,26 @@
+// === SVG logo wrapper === //
+.logo-wrapper {
+  display: inline-block;
+  height: $base-line-height * 2;
+  margin: $base-line-height * 0.5 0;
+}
+
+#logo {
+  height: $base-line-height * 2;
+
+  #brackets { fill: $light-white; }
+
+  #b, #a {
+    fill: $light-white;
+    @include transition(0.3s ease);
+  }
+
+  #q {
+    fill: $yellow;
+    @include transition(0.3s ease);
+  }
+
+  &:hover {
+    #b, #a { fill: $yellow }
+  }
+}
